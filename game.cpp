@@ -161,8 +161,7 @@ tuple<int, coords> perform_min_max(Board *board, char type);
 int main(int argc, char *argv[]){
 
     Board *board = new Board();
-    //int turn = (rand() % 2) + 1; // Generate who's turn it is, either 1 or 2
-    int turn = PLAYER;
+    int turn = (rand() % 2) + 1; // Generate who's turn it is, either 1 or 2
 
     while (TRUE){   
         cout << "Turn: " << turn << endl;
